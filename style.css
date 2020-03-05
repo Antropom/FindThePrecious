@@ -37,18 +37,22 @@ h2 {
     padding: 25px;
 }
 
+.wanted {
+  display: flex;
+  justify-content: space-around;
+}
+
 article {
-    display: inline-block;
     background-color: rgb(221, 221, 221);
-    height: 250px;
-    width: 210px;
+    height: 350px;
+    width: 310px;
     margin: 10px;
     text-align: left;
 }
 
 .split {
     border-bottom: 1px solid black;
-    margin: 0 20px;
+    margin: 35px 20px 0;
 }
 
 .contact {
@@ -64,12 +68,22 @@ input, textarea{
 
 @media (max-width: 960px) {
 
-  .carousel, article {
-    display: none
-  }
+  .wanted {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
 
   .contact {
     text-align: center;
+  }
+
+  article {
+      background-color: rgb(221, 221, 221);
+      height: 150px;
+      width: 90%;
+      margin: 10px;
+      text-align: left;
   }
 
   h2 {
