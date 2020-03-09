@@ -142,4 +142,10 @@ footer {
     justify-content: space-around;
     height: auto;
   }
+
+  .wrap:last-child {
+    margin: auto;
+    align-self: center;
+    font-size: 1em;
+  }
 }
